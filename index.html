@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="main.css">
+    <title>Job Application</title>
+</head>
+<body>
+<!-- Image and text -->
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-lg-end">
+        <a class="navbar-brand" href="#">
+            <img src="66_17_logo-yellowstone.jpg" alt="Yellowstone" />
+        </a>
+        <a class="navbar-brand" href="#">Yellowstone</a>
+    </nav>
+</div>
+
+
+<div class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-7 text-center">
+            <h1 id="test1" class="display-4 text-primary font-weight-bold">Job Application</h1>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid ">
+    <h2>Type of Job</h2>
+
+    <form role="form">
+        <div class="row">
+            <div class="col-sm">
+                <h3 class="card-title">Select preferred Job Type</h3>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="seasonal" checked>
+                    <label class="form-check-label" for="seasonal" >Seasonal</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="yearly">
+                    <label class="form-check-label" for="yearly" >Year Round</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <p class="ml-2">
+                Please select department that you are applying for and your job
+                preference. If you desire an Internship,
+                please select Internship as your only choice.
+            </p>
+            <form>
+               <div class="form-row align-items-center">
+                    <div class="col-auto my-1">
+                        <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">Internship</option>
+                            <option value="2">Business Support</option>
+                            <option value="3">Guest Relations</option>
+                            <option value="4">Housekeeping</option>
+                        </select>
+                    </div>
+               </div>
+            </form>
+            <div class="form">
+                <p class="ml-2">
+                    Please select your preferred position.
+                </p>
+
+                <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Internship
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                <label class="form-check-label" for="exampleRadios2">
+                    Business Support
+                </label>
+                <div class="col-md-6 mb-3">
+                    <select class="custom-select" id="validationDefault04" required>
+                        <option>---</option>
+                        <option>Activities Sales Agent</option>
+                        <option>Administrative Assistant Maintenance</option>
+                        <option>Asst. HR Manager</option>
+                        <option>Audit Clerk</option>
+                    </select>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                <label class="form-check-label" for="exampleRadios3">
+                    Guest Relations
+                </label>
+                <div class="col-md-6 mb-3">
+                    <select class="custom-select" id="validationDefault05" required>
+                        <option>---</option>
+                        <option>Guest Services Agent</option>
+                        <option>Guest Services Agent (Campground)</option>
+                        <option>Night Auditor</option>
+                        <option>Night Guest Services Agent</option>
+                    </select>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option3">
+                <label class="form-check-label" for="exampleRadios4">
+                    Food and Beverages
+                </label>
+                <div class="col-md-6 mb-3">
+                <select class="custom-select" id="validationDefault02" required>
+                    <option>---</option>
+                    <option>Food and Beverage Management</option>
+                    <option>Food and Beverage Office Assistant</option>
+                    <option>Kitchen Technician (D.L.)</option>
+                    <option>Laundry Technician (D.L.)</option>
+                    <option>Laundry Truck Driver (D.L.)</option>
+                    <option>Linen Truck Driver (D.L.)</option>
+                </select>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios5" value="option3">
+                <label class="form-check-label" for="exampleRadios5">
+                    Housekeeping
+                </label>
+                <div class="col-md-6 mb-3">
+                    <select class="custom-select" id="validationDefault01" required>
+                        <option>---</option>
+                        <option>Housekeeping Management</option>
+                        <option>Housekeeping Room Inspector</option>
+                        <option>Housekeeping Trainer</option>
+                        <option>Housekeeping Office Assistant</option>
+                        <option>Housing Manager</option>
+                    </select>
+                </div>
+            </div>
+            </div>
+
+            </div>
+
+        </div>
+            </div>
+            </div>
+        <div>
+
+            <h1>General information</h1>
+            <div class="customSeparator2"></div>
+
+            <div class="form-row">
+                <div class="col-md mb-3">
+                    <label class="font-weight-bold text-secondary" for="validationDefault01"
+                    >Have you ever worked for Xanterra Parks and Resorts, Amfac Park
+                        and Resorts, Fred Harvey or TWRS company?</label
+                    >
+                    <div id="giYes" class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"/>
+                        <label class="form-check-label" for="inlineRadio3">Yes</label>
+                    </div>
+                    <div id="giNo"class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"/>
+                        <label class="form-check-label" for="inlineRadio4">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hideDetailsGI">
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <label for="validationDefault03">Employee number</label>
+                        <input type="text" class="form-control" id="validationDefault03" placeholder="..." required/>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="validationDefault00">Last location worked</label>
+                        <select class="custom-select" id="validationDefault00" required>
+                            <option selected disabled placeholder="">...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <label for="start">Start date</label>
+                        <input type="month" class="form-control" id="start" name="start" min="2018-01" placeholder="..."/>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="end">End date</label>
+                        <input type="month" class="form-control" id="end" name="start" min="2018-01" placeholder="..."/>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="col-md mb-3">
+                    <label class="font-weight-bold text-secondary" for="validationDefault01"
+                    >Are you a spouse, dependent, relative, or Domestic Partner of a
+                        National Park Service employee?</label
+                    >
+                    <div id="giYes2" class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5"/>
+                        <label class="form-check-label" for="inlineRadio5">Yes</label>
+                    </div>
+                    <div id="giNo2" class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6"/>
+                        <label class="form-check-label" for="inlineRadio6">No</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hideDetailsGI2" >
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="validationDefault3">Full name</label>
+                        <input type="text" class="form-control" id="validationDefault3" placeholder="..." required/>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="validationDefault0">Location</label>
+                        <select class="custom-select" id="validationDefault0" required>
+                            <option selected disabled placeholder="">...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-row my-4">
+                <div class="col-md mb-3">
+                    <label class="font-weight-bold text-secondary" for="validationDefault01">If you are hired and meet housing requirements, please indicate your housing preference</label>
+                    <div class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option7"/>
+                        <label class="form-check-label" for="inlineRadio7">Local Resident</label>
+                    </div>
+                    <div class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8" value="option8"/>
+                        <label class="form-check-label" for="inlineRadio8">Dormitory (must be 18 years or older; no housing available for children or pets)</label>
+                    </div>
+
+                    <div class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9" value="option9"/>
+                        <label class="form-check-label" for="inlineRadio9"
+                        >RV or Trailer (this is your own self contained vehicle; space is limited)</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label class="font-weight-bold text-secondary" for="validationDefault4"
+                    >What is you race/ethnic origin?</label
+                    >
+                    <select class="custom-select" id="validationDefault4" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>Hispanic or Latino</option>
+                        <option>White</option>
+                        <option>Black or African American</option>
+                        <option>Native Hawaiian or Other Pacific Islander</option>
+                        <option>Asian</option>
+                        <option>American Indian or Alaska Native</option>
+                        <option>Two or More Races</option>
+                        <option>I prefer not to answer</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md mb-3">
+                    <label class="font-weight-bold text-secondary" for="validationDefault01"
+                    >What is your gender?</label
+                    >
+                    <div class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio10" value="option10"/>
+                        <label class="form-check-label" for="inlineRadio10">Male</label>
+                    </div>
+                    <div class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio11" value="option11"/>
+                        <label class="form-check-label" for="inlineRadio11">Female</label>
+                    </div>
+                    <div class="form-check form-check">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio12" value="option12"/>
+                        <label class="form-check-label" for="inlineRadio12">I prefer not to answer</label
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Personal information</h2>
+        <form>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault001">First name</label>
+                    <input type="text" class="form-control" id="validationDefault001" value="" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault002">Last name</label>
+                    <input type="text" class="form-control" id="validationDefault002" value="" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault003">City</label>
+                    <input type="text" class="form-control" id="validationDefault003" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault004">State</label>
+                    <select class="custom-select" id="validationDefault004" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                        <option>AL</option>
+                        <option>AK</option>
+                        <option>AZ</option>
+                        <option>AR</option>
+                        <option>CA</option>
+                        <option>CO</option>
+                        <option>CT</option>
+                        <option>DE</option>
+                        <option>DC</option>
+                        <option>FL</option>
+                        <option>GA</option>
+                        <option>HI</option>
+                        <option>ID</option>
+                        <option>IL</option>
+                        <option>IN</option>
+                        <option>IA</option>
+                        <option>KS</option>
+                        <option>KY</option>
+                        <option>LA</option>
+                        <option>ME</option>
+                        <option>MD</option>
+                        <option>MA</option>
+                        <option>MI</option>
+                        <option>MN</option>
+                        <option>MS</option>
+                        <option>MO</option>
+                        <option>MT</option>
+                        <option>NE</option>
+                        <option>NV</option>
+                        <option>NH</option>
+                        <option>NJ</option>
+                        <option>NM</option>
+                        <option>NY</option>
+                        <option>NC</option>
+                        <option>ND</option>
+                        <option>OH</option>
+                        <option>OK</option>
+                        <option>OR</option>
+                        <option>PA</option>
+                        <option>PR</option>
+                        <option>RI</option>
+                        <option>SC</option>
+                        <option>SD</option>
+                        <option>TN</option>
+                        <option>TX</option>
+                        <option>UT</option>
+                        <option>VT</option>
+                        <option>VA</option>
+                        <option>WA</option>
+                        <option>WV</option>
+                        <option>WI</option>
+                        <option>WY</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationDefault005">Zip</label>
+                    <input type="text" class="form-control" id="validationDefault005" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault006">Email</label>
+                    <input type="text" class="form-control" id="validationDefault006" placeholder="..." required/>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="validationDefault007">Phone Number</label>
+                    <input type="text" class="form-control" id="validationDefault007" placeholder="" required/>
+                </div>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Upload resume</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+            </form>
+
+        </form>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                    Agree to terms and conditions
+                </label>
+            </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Apply</button>
+    </form>
+
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
